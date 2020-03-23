@@ -13,6 +13,5 @@ puts '---'
 GeometricProgression.new(max_iteration: 5).each { |n| puts n }
 
 puts '********'
-arr = GeometricProgression.new(max_iteration: 5)
-puts map(arr) { |n| n * n }
-
+arr = GeometricProgression.new(max_iteration: 5).map { |n| n * n }
+puts arr
