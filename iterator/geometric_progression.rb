@@ -12,4 +12,14 @@ class GeometricProgression
       yield b
     end
   end
+
+  def map
+    new_arr = []
+    b = @a
+    (0...@max_iteration).map do
+      b *= @denominator
+      new_arr.push(yield b)
+    end
+    new_arr
+  end
 end
