@@ -8,10 +8,11 @@ def map(arr)
   new_arr
 end
 
-GeometricProgression.new(max_iteration: 5, a: 5, denominator: 2).each { |n| puts n }
+GeometricProgression.new(max_iteration: 5, a: 10, denominator: 2).each { |n| puts n }
 puts '---'
 GeometricProgression.new(max_iteration: 5).each { |n| puts n }
 
 puts '********'
 arr = GeometricProgression.new(max_iteration: 5).map { |n| n * n }
 puts arr
+
